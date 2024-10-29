@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <header>
+            <h1>⬅ Checkout</h1>
+            <p>Homepage / Clothing Category / Checkout</p>
+        </header>
+            <div class="steps">
+                <div class="name-backs">
+                    <span class="step active">1</span>
+                    <div class="name-back">Delivery
+                    </div>
+                </div>
+                <div class="name-backs">
+                    <span class="step z">2</span>
+                    <div class="name-back">Payment
+                    </div>
+                </div>
+                <div class="name-backs">
+                    <span class="step z">3</span>
+                    <div class="name-back">Confirmation
+                    </div>
+                </div>
+            </div>
+        <div class="container-fluid">
+            <div class="form-container">
+                <h2>Contact Information</h2>
+                <form>
+                    <div class="row">
+                        <div class="column">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" placeholder="First Name">
+                        </div>
+                        <div class="column">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" placeholder="Eduardo Correia">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Your email@gmail.com">
+                        </div>
+                        <div class="column">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="+1 (0000 000 0000)">
+                        </div>
+                    </div>
+                    <h2>Delivery Information</h2>
+                    <div class="row">
+                        <div class="column">
+                            <label for="date">Delivery Date</label>
+                            <input type="date" id="date" placeholder="DD/MM/YYYY">
+                        </div>
+                        <div class="column">
+                            <label for="time">Convenient Time</label>
+                            <input type="text" id="time" placeholder="1pm-9pm">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <label for="city">City</label>
+                            <select id="city">
+                                <option>Alabama</option>
+                            </select>
+                        </div>
+                        <div class="column">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" placeholder="Click to find Address">
+                        </div>
+                        <div class="column">
+                            <label for="zip">Zip code</label>
+                            <input type="text" id="zip" placeholder="00000">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Proceed to Payment</button>
+                </form>
+            </div>
+        </section>
+        <div class="order-summary">
+            <h2>Your Order</h2>
+            <div class="order-item">
+                <img src="https://ae01.alicdn.com/kf/S0c0b3db302e94afbbfea354375dc7a3ff/Jaqueta-vintage-varsity-masculina-e-feminina-carta-bordada-manga-beisebol-casaco-casual-de-l-roupa-verde.jpg" alt="Vintage Sport Jacket" class="item-image">
+                <div class="item-details">
+                    <div class="h3-itens">
+                        <h3>Vintage Sport Jacket</h3><h3 class="trawch">🗑️</h3>
+                    </div>
+                        <p class="description">-Vintage Highschool Jock Bully<br>-1960 Classic Edition</p>
+                    <div class="item-options">
+                        <div class="option">
+                            <label>Size</label>
+                            <span>Medium size</span>
+                        </div>
+                        <div class="option">
+                            <label>Colour</label>
+                            <span>Red</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quantity-price">
+                    <div class="quantity-control">
+                        <button class="quantity-btn">-</button>
+                        <input type="number" value="2" min="1" class="quantity-input">
+                        <button class="quantity-btn">+</button>
+                    </div>
+                    <p class="price">$165.00</p>
+                </div>
+            </div>
+            <div class="order-item">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_976940-CBT77065952145_062024-O.webp" alt="Pamela's Jacket" class="item-image">
+                <div class="item-details">
+                    <div class="h3-itens">
+                    <h3>Pamela's Jacket</h3><h3 class="trawch">🗑️</h3>
+                </div>
+                    <p class="description">-Vintage Winter WEARS<br>-1975 Classic Edition</p>
+                    <div class="item-options">
+                        <div class="option">
+                            <label>Size</label>
+                            <span>Large size</span>
+                        </div>
+                        <div class="option">    
+                            <label>Colour</label>
+                            <span>Pink</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quantity-price">
+                    <div class="quantity-control">
+                        <button class="quantity-btn">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-btn">+</button>
+                    </div>
+                    <p class="price">$140.00</p>
+                </div>
+            </div>
+            <div class="order-total">
+                <div class="totals-row">
+                    <span>Subtotal</span>
+                    <span>$654.00</span>
+                </div>
+                <div class="totals-row">
+                    <span>Shipping</span>
+                    <span>$64.00</span>
+                </div>
+                <div class="totals-row">
+                    <span>Vat, tax</span>
+                    <span>$64.00</span>
+                </div>
+                <div class="total-amount">
+                    <span>Total</span>
+                    <span>$778.00</span>
+                </div>
+            </div>
+        </div>
+        </div>
+</body>
+</html>
